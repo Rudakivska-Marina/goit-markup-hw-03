@@ -5,6 +5,7 @@
     --CLOUD: #F4F4FD;
     --IRIS: #4D5AE5;
     --OCEAN: #404BBF;
+    --CORNFLOWER: #E7E9FC;
 }
 
 body {
@@ -18,9 +19,56 @@ body {
     text-shadow: none;
 }
 
+.list {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 /* header */
 
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-div-web-studio {
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFFFFF);
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 /* logo */ 
+
+.header-div-web-studio {
+    display: flex;
+    align-items: center;
+}
 
 .logo-navy-iris {
     color: var(--IRIS);
@@ -40,7 +88,10 @@ body {
 /* menu */ 
 
 .menu {
-    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 76px;
 }
 
 .menu-li-link {
@@ -63,7 +114,9 @@ body {
 }
 
 .social-address {
-    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    padding-left: 332px;
 }
 
 .social-address-li-link {
@@ -84,6 +137,10 @@ body {
 
 .section-solutions {
     background-color: var(--NAVY-BLUE);
+    max-height: 600px;
+    flex-shrink: 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 /* h1 */
@@ -96,6 +153,11 @@ body {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    /* flex */
+    width: 496px;
+    padding-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* button */
@@ -110,8 +172,19 @@ body {
     line-height: 24px;
     letter-spacing: 0.64px;
     cursor: pointer;
-    /* background */
+    /* flex */
+    display: block;
+    min-width: 169px;
+    align-items: flex-start;
+    gap: 10px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
     background: var(--IRIS, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .order-service:hover,
@@ -121,8 +194,20 @@ body {
 
 /* section 2*/
 
+.our-advantages {
+    display: none;
+}
+
 .our-advantages-list {
-    list-style-type: none;
+    display: flex;
+    gap: 24px;
+    width: 1128px;
+    height: 104px;
+    flex-shrink: 0;
+}
+
+.our-advantages-list-li {
+    width: calc((100% - 72px) / 4);
 }
 
 .our-advantages-list-li-h {
@@ -132,6 +217,11 @@ body {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.4px;
+    /* flex */
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .our-advantages-list-li-p {
@@ -139,12 +229,19 @@ body {
     /* Body Text */
     line-height: 24px;
     letter-spacing: 0.32px;
+    /* flex */
+    max-width: 264px;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
 }
 
 /* section 3 */
 
 .section-our-team {
-    background-color: var(--CLOUD)
+    background-color: var(--CLOUD);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .our-team {
@@ -153,15 +250,32 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--NAVY-BLUE)
+    color: var(--NAVY-BLUE);
+    /*flex*/
+    margin-bottom: 72px;
 }
 
 .our-team-list {
-    list-style-type: none;
+    display: flex;
+    gap: 24px;
 }
 
 .our-team-list-li {
-    background-color: var(--WHITE)
+    background-color: var(--WHITE);
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.our-div-team-list-li {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-list-li-h {
@@ -172,6 +286,11 @@ body {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.4px;
+    /* flex */
+    text-align: center;
+    margin-bottom: 8px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .our-team-list-li-p {
@@ -180,6 +299,10 @@ body {
     /* Body Text*/
     line-height: 24px;
     letter-spacing: 0.32px;
+    /* flex */
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* section 4 */
@@ -194,10 +317,42 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    /*flex*/
+    padding-bottom: 72px;
 }
 
 .our-portfolio-list {
-    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.our-portfolio-list-li {
+    padding-bottom: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFFFFF);
+    width: calc((100% - 48px) / 3);
+    border-top: none;
+}
+
+.our-portfolio-list-li-img {
+    max-width: 100%;
+    margin-bottom: 32px;
+}
+
+.our-div-portfolio-list-li {
+    display: flex;
+    padding: 0px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
 }
 
 .our-portfolio-list-li-h {
@@ -220,6 +375,13 @@ body {
 
 .footer-web-studio {
     background-color: var(--NAVY-BLUE);
+    height: 312px;
+    flex-shrink: 0;
+}
+
+.footer-div-web-studio {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo-iris {
@@ -231,6 +393,12 @@ body {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     text-decoration: none;
+    /* flex*/
+    display: inline-block;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-bottom: 18px;
 }
 
 .footer-logo-cloud {
@@ -242,4 +410,6 @@ body {
     /* Body Text */
     line-height: 24px;
     letter-spacing: 0.32px;
+    /*flex*/
+    max-width: 264px;
 }
