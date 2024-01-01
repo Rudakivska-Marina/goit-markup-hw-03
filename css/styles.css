@@ -65,6 +65,7 @@ img {
     background: var(--WHITE, #FFFFFF);
     padding-top: 24px;
     padding-bottom: 24px;
+    display: flex;
 }
 
 /* logo */ 
