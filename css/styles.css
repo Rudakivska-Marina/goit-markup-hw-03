@@ -58,12 +58,12 @@ img {
 
 .header-web-studio {
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-div-web-studio {
     background: var(--WHITE, #FFFFFF);
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: flex;
 }
 
@@ -147,7 +147,6 @@ img {
 .section-solutions {
     background-color: var(--NAVY-BLUE);
     max-height: 600px;
-    flex-shrink: 0;
     padding-top: 188px;
     padding-bottom: 188px;
 }
