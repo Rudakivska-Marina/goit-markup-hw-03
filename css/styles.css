@@ -58,8 +58,6 @@ img {
 
 .header-web-studio {
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-div-web-studio {
@@ -97,7 +95,6 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding-left: 76px;
 }
 
 .menu-li-link {
@@ -108,6 +105,7 @@ img {
     letter-spacing: 0.32px;
     text-decoration: none;
     /*flex*/
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -120,12 +118,12 @@ img {
 /* address */
 .contacts {
     font-style: normal;
+    margin-left: auto;
 }
 
 .social-address {
     display: flex;
     gap: 40px;
-    padding-left: 250px;
 }
 
 .social-address-li-link {
@@ -163,7 +161,7 @@ img {
     letter-spacing: 1.12px;
     /* flex */
     max-width: 496px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -347,12 +345,7 @@ img {
 }
 
 .our-portfolio-list-li {
-    padding-bottom: 32px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
     flex-shrink: 0;
-    
     background: var(--WHITE, #FFFFFF);
     width: calc((100% - 48px) / 3);
     border-top: none;
@@ -366,12 +359,6 @@ img {
     padding: 32px 16px;
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
     border-top: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
-    align-self: stretch;
 }
 
 .our-portfolio-list-li-h {
